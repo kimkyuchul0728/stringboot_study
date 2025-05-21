@@ -1,5 +1,6 @@
 package com.korit.springboot.controller;
 
+import com.korit.springboot.ioc.BeanStudy;
 import com.korit.springboot.ioc.삼성배터리;
 import com.korit.springboot.ioc.스마트폰;
 import lombok.AllArgsConstructor;
@@ -12,7 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class IoCController {
 
+
     private 스마트폰 s;
+    private BeanStudy beanStudy;
 
     @GetMapping("/ioc")
     public String get() {

@@ -16,7 +16,7 @@ import java.util.Map;
 @RestController
 public class HttpStudyController4 {
 
-    @GetMapping("/api/study/http/get")
+//    @GetMapping("/api/study/http/get")
     public ResponseEntity <Map<String, Object>> get() {
 //        return new ResponseEntity<>(Map.of("name", "김규철", "age", 22), HttpStatus.BAD_REQUEST);
         return ResponseEntity.badRequest().body(Map.of("name", "김규철", "age", 22));

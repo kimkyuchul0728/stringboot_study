@@ -26,7 +26,7 @@ public class DoctorService {
                             DepartmentEntity department = DepartmentEntity.builder()
                                     .departmentName(dto.getDepartmentName())
                                     .build();
-                            DepartmentEntity savedEntity = departmentRepository.save(de partment);
+                            DepartmentEntity savedEntity = departmentRepository.save(department);
                             DoctorEntity entity = dto.toEntity(savedEntity.getId());
                             doctorRepository.save(entity);
                         }
